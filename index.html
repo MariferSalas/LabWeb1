@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <title>Galeria de Marifer</title>
+    </head>
+    <body>
+        <!-- Alerts -->
+        <div class="alert alert-info" role="alert">
+            Hola! Estás entrando a la galería de fotografía de Marifer :) Este es un espacio de expresión para compartir fotografías
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- Navbars -->
+        <nav class="navbar fixed-top navbar-light bg-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#">Galería Marifer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#intro">Introducción a fotografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#luz">Manejo de luz natural y flash</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#comments">Comentarios</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+
+        <h3>Introducción a fotografía</h3>
+        <!-- Cards -->
+        <div class="clases1" id="intro">
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/barrioAntiguo1.jpg" class="card-img-top" alt="foto de barrio antiguo">
+                <div class="card-body">
+                    <h5 class="card-title">Barrio Antiguo</h5>
+                    <p class="card-text">Práctica realizada en la segunda clase del curso de 10 a 1 pm el 20 de noviembre de 2021.</p>
+                    <!-- Collapse-->
+                    <a href="#barrioAntiguo" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/fundidora1.jpg" class="card-img-top" alt="foto de fundidora">
+                <div class="card-body">
+                    <h5 class="card-title">Fundidora</h5>
+                    <p class="card-text">Práctica realizada en la tercera clase del curso de 8 a 11 am el 27 de noviembre de 2021.</p>
+                    <!-- Collapse-->
+                    <a href="#fundidora" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/santiago1.jpg" class="card-img-top" alt="foto de santiago">
+                <div class="card-body">
+                    <h5 class="card-title">Santiago</h5>
+                    <p class="card-text">Práctica realizada en la sexta clase del curso de 9 a 12 pm el 11 de diciembre de 2021.</p>
+                    <!-- Collapse-->
+                    <a href="#santiago" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>
+        </div>
+        <div class="visionFotos1">
+            <div class="collapse" id="barrioAntiguo">
+                <div class="card card-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/barrioAntiguo2.jpg" class="d-block w-100" alt="foto de barrio antiguo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/barrioAntiguo3.jpg" class="d-block w-100" alt="foto de barrio antiguo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/barrioAntiguo4.jpg" class="d-block w-100" alt="foto de barrio antiguo">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="fundidora">
+                <div class="card card-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/fundidora2.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/fundidora3.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/fundidora4.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="santiago">
+                <div class="card card-body">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/santiago2.jpg" class="d-block w-100" alt="foto de santiago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/santiago3.jpg" class="d-block w-100" alt="foto de santiago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/santiago4.jpg" class="d-block w-100" alt="foto de santiago">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="favcolection1">
+            <h5>¿Cuál colección te gustó más?</h5>
+                <!-- Button group --> 
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Barrio Antiguo</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Fundidora</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Santiago</button>
+                </div>
+        </div>
+
+        <h3>Manejo de luz natural y flash</h3>
+        <div class="clases2" id="luz">    
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/fundidoraLuz1.jpg" class="card-img-top" alt="foto de fundidora">
+                <div class="card-body">
+                    <h5 class="card-title">Fundidora</h5>
+                    <p class="card-text">Práctica realizada en la tercer clase del curso de 8 a 11 pm el 12 de febrero de 2022.</p>
+                    <!-- Collapse-->
+                    <a href="#fundidoraLuz" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/retratos1.jpg" class="card-img-top" alt="foto de retrato">
+                <div class="card-body">
+                    <h5 class="card-title">Retratos</h5>
+                    <p class="card-text">Práctica realizada en la quinta clase del curso de 10 am a 1 pm el 26 de febrero de 2022.</p>
+                    <!-- Collapse-->
+                    <a href="#retratos" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/pintarluz1.jpg" class="card-img-top" alt="foto de pintura con luz">
+                <div class="card-body">
+                    <h5 class="card-title">Pintar con luz</h5>
+                    <p class="card-text">Práctica realizada en la sexta clase del curso de 10 am a 1 pm el 5 de marzo de 2022.</p>
+                    <!-- Collapse-->
+                    <a href="#pintarConLuz" data-toggle="collapse" class="btn btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample">Ver fotos</a>
+                </div>
+            </div>  
+        </div>
+        <div class="visionFotos2">
+            <div class="collapse" id="fundidoraLuz">
+                <div class="card card-body">
+                    <!-- 5 Carousel -->
+                    <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/fundidoraLuz2.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/fundidoraLuz3.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/fundidoraLuz4.jpg" class="d-block w-100" alt="foto de fundidora">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="retratos">
+                <div class="card card-body">
+                    <!-- 5 Carousel -->
+                    <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/retratos2.jpg" class="d-block w-100" alt="foto de retrato">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/retratos3.jpg" class="d-block w-100" alt="foto de retrato">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/retratos4.jpg" class="d-block w-100" alt="foto de retrato">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="pintarConLuz">
+                <div class="card card-body">
+                    <!-- 5 Carousel -->
+                    <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/pintarluz2.jpg" class="d-block w-100" alt="foto de pintura con luz">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/pintarluz3.jpg" class="d-block w-100" alt="foto de pintura con luz">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/pintarluz4.jpg" class="d-block w-100" alt="foto de pintura con luz">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <div id="likeButtons">
+                            <!-- Popover -->
+                            <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Muchas gracias por tu like.">Like</button>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-danger">Dislike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="favcolection2">
+            <h5>¿Cuál colección te gustó más?</h5>
+                <!-- Button group --> 
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Fundidora</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Retratos</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Pintar con Luz</button>
+                </div>
+        </div>
+
+        <!-- input text area-->
+        <div class="input-group" id="comments">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Deja tus comentarios aquí</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¡Muchas gracias por tu opinión!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

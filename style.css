@@ -1,0 +1,62 @@
+ul{
+    margin: 50px;
+}
+
+.clases1, .clases2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: flex-end;
+    margin: 20px;
+}
+
+.favcolection1, .favcolection2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.visionFotos1, .visionFotos2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+#likeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+#likeButtons button {
+    margin: 10px;
+}
+
+h1, h3 {
+    margin: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-group button{
+    margin: 10px;
+}
+
+.alert{
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.carousel-inner img{
+    max-height: 600px;
+    max-width: 900px;
+}
